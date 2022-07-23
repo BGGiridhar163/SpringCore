@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+        
+        <bean id="emp" class="com.joc.Employee">
+        	<property name="eid" value="123"/>
+        	<property name="ename" value="Harish"/>
+        	<property name="salary" value="70000"/>
+        </bean>
+        
+        <bean id="add" class="com.joc.Address">
+        	<constructor-arg value="4"/>
+        	<constructor-arg value="Bangalore"/>
+        	<constructor-arg value="KA"/>
+        </bean>
+        
+        <bean id="l1" class="com.joc.ListEx">
+        	<property name="question" value="What is Java"/>
+        	<property name="ans">
+        		<list>
+        			<value>Java is OOPS</value>
+        			<value>Java is MultiThreaded</value>
+        			<value>Java is Platform Independent</value>
+        		</list>
+        	</property>
+        </bean>
+ </beans>
